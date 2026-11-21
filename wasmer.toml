@@ -1,0 +1,8 @@
+[package]
+name = "lumina-elibrary"
+version = "1.0.0"
+description = "Lumina static web frontend for Wasmer hosting. Point LUMINA_API at the Java backend."
+
+[[fs]]
+kind = "static"
+path = "src/main/resources/static"

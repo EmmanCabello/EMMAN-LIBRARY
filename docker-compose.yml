@@ -1,0 +1,14 @@
+services:
+  lumina:
+    build: .
+    container_name: lumina-elibrary
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+    volumes:
+      - lumina-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  lumina-data:
